@@ -14,8 +14,12 @@ const handler = NextAuth({
         },
       },
       async authorize(credentials: any) {
+        console.log(credentials);
+        //validation
         return {
           id: "user1",
+          name: "Nirbhay Singh",
+          email: "nirbhaysingh943012@gmail.com",
         };
       },
     }),
